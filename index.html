@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body id="landing">
+    <!-- Navigation -->
+    <nav id="desktop-nav">
+      <div class="logo">Min Sung (Milo) Park</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#assignments">Assignments</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Min Sung (Milo) Park</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#assignments" onclick="toggleMenu()">Assignments</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/headshot.png" alt="Milo Park profile picture" style="border-radius: 50%;" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Min Sung (Milo) Park</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download Resume</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/milopark/'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/miloopark'" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/headshot.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>3+ years <br />Software Engineering</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>Bachelor of Arts in Computer Science, Minor in Mathematics & Visual Arts</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi! My name is Min Sung (Milo), an undergraduate pursuing a BA in computer science and mathematics at Boston University. I am interested in software engineering, quantitative research & trading, artificial intelligence, sound engineering, video editing and production, graphic design, and product management.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Boston Medical Center</h2>
+            <h3>Software Engineer Intern</h3>
+            <p>June 2024 - July 2024 | Boston, Massachusetts</p>
+            <ul>
+              <li>Developed a high-performance GUI for the RESPOND simulation model using Figma and React, increasing user engagement time by 35% through A/B testing and user feedback integration.</li>
+              <li>Automated data normalization using Python and SQL, enhancing data accuracy by 20% and reducing manual prep time.</li>
+              <li>Applied Markov Chain Monte Carlo methods for RESPOND calibration, optimizing parameter estimation and improving prediction precision by 15%.</li>
+            </ul>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Spark! Technology Innovation Fellowship</h2>
+            <h3>Technical Product Manager, Lead Developer, Product Designer</h3>
+            <p>Jan 2024 - May 2024 | Boston, Massachusetts</p>
+            <ul>
+              <li>Spearheaded the development of an educational app featuring an AI-powered 3D avatar to revolutionize children's learning experiences.</li>
+              <li>Managed an Agile team, optimizing sprint cycles with Jira, facilitating Agile development through sprint planning, daily stand-ups, and retrospectives.</li>
+              <li>Rigged and animated an interactive avatar in Blender, and programmed in TypeScript to dynamically respond to real-time conversations with users.</li>
+            </ul>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">CIDAR Lab</h2>
+            <h3>Software Engineer Intern</h3>
+            <p>May 2023 - August 2023 | Boston, Massachusetts</p>
+            <ul>
+              <li>Programmed a bioinformatics tool using Depth-First Search and Breadth-First Search for efficient microbial community pattern analysis.</li>
+              <li>Implemented the Subset Sum Problem algorithm to analyze microbial community attributes, enhancing data analysis precision by 70%.</li>
+              <li>Set robust unit tests with React Testing Library and Jest, reducing post-deployment bugs and ensuring high reliability.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <h2 class="experience-sub-title project-title">ALEA: Esports Betting Platform with Unique Network NFTs</h2>
+              <p>Solidity, Hardhat, Polkadot, Unique Network, Moonbeam, Node, Express, Apollo Server, Mongoose, React</p>
+              <ul>
+                <li>Engineered an esports betting platform on the Polkadot blockchain utilizing Unique Network NFTs, enabling users to place bets, receive NFTs as rewards, and trade these NFTs as collectible assets.</li>
+                <li>Architected and deployed robust smart contracts with Solidity and Hardhat, implementing secure betting mechanisms and NFT minting functions.</li>
+                <li>Built a full-stack application with a Node.js backend, Apollo Server, and React frontend, leveraging Polkadot for blockchain interactions and Docker for local development.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <h2 class="experience-sub-title project-title">Trading Strategy Playground</h2>
+              <p>Python, NumPy, Pandas, Matplotlib, yfinance, statsmodels, scikit-learn, TensorFlow, Jupyter Notebooks</p>
+              <ul>
+                <li>Implemented algorithmic trading strategies using historical stock data: Dual Class Arbitrage, Bollinger Band Strategy, Reinforcement Learning Algorithm, and Sector-Based Pairs Trading.</li>
+                <li>Utilized NumPy, Pandas, Matplotlib, yfinance, statsmodels, and scikit-learn for data manipulation, analysis, visualization, and statistical analysis.</li>
+                <li>Conducted backtesting and analysis to evaluate the potential profitability and risk management of each strategy.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#assignments'" />
+    </section>
+
+    <!-- Assignments Section -->
+    <section id="assignments">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Assignments</h1>
+      <div class="assignment-container">
+        <div class="assignment">
+          <h2>Assignment 0</h2>
+          <p>A python script that adds two numbers together and prints their sum to the command line.</p>
+          <a href="https://github.com/miloopark/minpark-assignment-0" class="btn">GitHub Link</a>
+        </div>
+        <!-- Repeat the above block for each assignment -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:minpark@bu.edu">minpark@bu.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/milopark/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#assignments">Assignments</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&copy; 2024 Min Sung (Milo) Park. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Automatically scroll to the About Me section on page load
+      window.onload = function() {
+        location.href = '#about';
+      };
+    </script>
+  </body>
+</html>
